@@ -1,12 +1,14 @@
 @mixin beforeIcon {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
     margin: auto;
-    width: 15px;
-    height: 15px;
-    background-color: blue;
+    width: $width;
+    height: $height;
+    background-color: #blue;
+    background-repeat: no-repeat;
+    background-size: contain;  ;
 }
