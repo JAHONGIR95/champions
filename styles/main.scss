@@ -1,8 +1,15 @@
 @import '../styles/normalize';
-@import 'fonts';
+@import '../styles/fonts';
+@import '../styles/mixin';
 
 
 
 h1{
     color: blue;
+    position: relative;
+    display: inline-block;
+    &::before{
+        @include beforeIcon;
+    }
 }
+
