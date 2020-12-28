@@ -392,8 +392,6 @@ body {
   background-size: 70% 100%, cover;
   background-position: top right, center;
   border-radius: 16px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,6 +444,12 @@ body {
      object-fit: cover;
 }
 
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .video__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,8 +489,6 @@ body {
 .video__inner .video-block__banner {
   position: absolute;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .video__inner .video-block__banner .banner-top {
@@ -545,5 +547,76 @@ body {
 
 .video__inner .video-block__banner .about-sport:active {
   opacity: .6;
+}
+
+.video__inner .video-post__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 125.34%;
+  color: #558EF7;
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.video__inner .video-post__title:hover {
+  opacity: .8;
+}
+
+.video__inner .video-post__title:active {
+  opacity: .6;
+}
+
+.video__inner .video-post__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125.34%;
+  color: #5D748A;
+  max-width: 416px;
+  margin-bottom: 26px;
+}
+
+.video__inner .video-post__all-video {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FEA244;
+  position: relative;
+}
+
+.video__inner .video-post__all-video:hover {
+  opacity: .8;
+}
+
+.video__inner .video-post__all-video:active {
+  opacity: .6;
+}
+
+.video__inner .video-post__all-video:hover::before {
+  -webkit-transform: translate(35px);
+          transform: translate(35px);
+}
+
+.video__inner .video-post__all-video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -24px;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/icon/pointer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 /*# sourceMappingURL=main.css.map */
