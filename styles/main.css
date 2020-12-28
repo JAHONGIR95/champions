@@ -27,6 +27,17 @@ p {
   font-display: swap;
 }
 
+.container {
+  width: 100%;
+  max-width: 1312px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'ProximaNovaSoftW03';
 }
