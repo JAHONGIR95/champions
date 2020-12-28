@@ -41,4 +41,196 @@ p {
 body {
   font-family: 'ProximaNovaSoftW03';
 }
+
+.hero header {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.hero header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.hero header .header-inner .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero header .header-inner .header-left__logo {
+  width: 70.5px;
+  height: 56px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 23px;
+}
+
+.hero header .header-inner .header-left__logo:hover {
+  opacity: .8;
+}
+
+.hero header .header-inner .header-left__logo:active {
+  opacity: .6;
+}
+
+.hero header .header-inner .header-left__logo-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 110.84%;
+  color: #5D748A;
+  max-width: 130px;
+  text-decoration: none;
+}
+
+.hero header .header-inner .header-left__logo-title:hover {
+  opacity: .8;
+}
+
+.hero header .header-inner .header-left__logo-title:active {
+  opacity: .6;
+}
+
+.hero header .header-inner .header-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: 33px;
+}
+
+.hero header .header-inner .header-middle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: -33px;
+  margin: auto;
+  width: 22px;
+  height: 19px;
+  background-image: url(../images/icon/home.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero header .header-inner .header-middle__link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 18px 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5D748A;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.hero header .header-inner .header-middle__link:hover {
+  color: #FEA244;
+}
+
+.hero header .header-inner .header-middle__link:active {
+  opacity: .6;
+}
+
+.hero header .header-inner .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero header .header-inner .header-right__lang {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D748A;
+  margin-right: 24px;
+  position: relative;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.hero header .header-inner .header-right__lang:hover {
+  color: #FEA244;
+}
+
+.hero header .header-inner .header-right__lang:active {
+  opacity: .6;
+}
+
+.hero header .header-inner .header-right__lang::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: -24px;
+  margin: auto;
+  width: 16.5px;
+  height: 16px;
+  background-image: url(../images/icon/lang.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .6;
+}
+
+.hero header .header-inner .header-right__kabinet {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 8px 16.5px;
+  border: 1px solid #FEA244;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.hero header .header-inner .header-right__kabinet:hover {
+  opacity: .6;
+}
+
+.hero header .header-inner .header-right__kabinet .kabinet-image {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.hero header .header-inner .header-right__kabinet .kabinet-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5D748A;
+}
 /*# sourceMappingURL=main.css.map */

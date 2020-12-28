@@ -16,3 +16,152 @@ body{
     font-family: 'ProximaNovaSoftW03';
 }
 
+// ********************************** header **************************************
+
+.hero{
+
+    header{
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+        backdrop-filter: blur(4px);
+
+        .header-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 14px;
+            padding-bottom: 14px;
+
+            .header-left{
+                display: flex;
+
+                &__logo{
+                    width: 70.5px;
+                    height: 56px;
+                    object-fit: contain;
+                    margin-right: 23px;
+
+                    &:hover{
+                        opacity: .8;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+                }
+
+                &__logo-title{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 110.84%;
+                    color:#5D748A;
+                    max-width: 130px;
+                    text-decoration: none;
+
+                    &:hover{
+                        opacity: .8;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+
+                }
+            }
+
+            .header-middle{
+                display: flex;
+                position: relative;
+                margin-left: 33px;
+
+                &::before{
+                    @include beforeIcon(0, auto, 0, -33px, 22px, 19px, url(../images/icon/home.svg));
+
+                }
+
+                &__link{
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: 18px 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #5D748A;
+                    transition: all ease .5s;
+
+                    &:hover{
+                        color: #FEA244;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .header-right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &__lang{
+                    display: inline-block;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #5D748A;
+                    margin-right: 24px;
+                    position: relative;
+                    transition: all ease .5s;
+
+                    &:hover{
+                        color: #FEA244;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+
+                    &::before{
+                        @include beforeIcon(0, auto, 0, -24px, 16.5px, 16px, url(../images/icon/lang.svg));
+                        opacity: .6;
+    
+                    }
+                }
+
+                &__kabinet{
+                    align-items: center;
+                    background: #FFFFFF;
+                    border-radius: 24px;
+                    padding: 8px 16.5px;
+                    border: 1px solid #FEA244;
+                    display: flex;
+                    text-decoration: none;
+                    transition: all ease .5s;
+
+                    &:hover{
+                        opacity: .6;
+                    }
+
+                    .kabinet-image{
+                        margin-right: 8px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .kabinet-title{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #5D748A;
+                    }
+                }
+            }
+        }
+    }
+}
