@@ -367,4 +367,20 @@ body{
 }
 // *************************** video blog section **********************************************
 
-.vic
+.video{
+    
+    &__inner{
+        display: flex;
+        align-items: flex-start;
+
+        .video-block{
+
+            &.football{
+                background-image: url(../images/futbol.jpg);
+                background-repeat: no-repeat;
+                background-size: ;
+                background-position: center;
+            }
+        }
+    }
+}

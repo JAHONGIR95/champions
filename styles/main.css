@@ -445,4 +445,20 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.video__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.video__inner .video-block.football {
+  background-image: url(../images/futbol.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 /*# sourceMappingURL=main.css.map */
