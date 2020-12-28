@@ -455,10 +455,95 @@ body {
           align-items: flex-start;
 }
 
+.video__inner .video-block {
+  width: 304px;
+  height: 216px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 .video__inner .video-block.football {
-  background-image: url(../images/futbol.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#383C45), to(rgba(56, 60, 69, 0.3))), url(../images/futbol.jpg);
+  background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/futbol.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 304px 216px;
   background-position: center;
+  position: relative;
+  margin-right: 32px;
+}
+
+.video__inner .video-block.armlesting {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#383C45), to(rgba(56, 60, 69, 0.3))), url(../images/kuch-sinashish2.jpg);
+  background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/kuch-sinashish2.jpg);
+  background-repeat: no-repeat;
+  background-size: 304px 216px;
+  background-position: center;
+  position: relative;
+  margin-right: 32px;
+}
+
+.video__inner .video-block__banner {
+  position: absolute;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.video__inner .video-block__banner .banner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.video__inner .video-block__banner .banner-top__date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.video__inner .video-block__banner .banner-top__sport {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.video__inner .video-block__banner .play-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.video__inner .video-block__banner .about-sport {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.12px;
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.video__inner .video-block__banner .about-sport:hover {
+  opacity: .8;
+}
+
+.video__inner .video-block__banner .about-sport:active {
+  opacity: .6;
 }
 /*# sourceMappingURL=main.css.map */
