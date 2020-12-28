@@ -17,4 +17,17 @@ p {
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'ProximaNovaSoftW03';
+  src: url("../fonts/ProximaNovaSoftW03-Regular.eot");
+  src: url("../fonts/ProximaNovaSoftW03-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaSoftW03-Regular.woff") format("woff"), url("../fonts/ProximaNovaSoftW03-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'ProximaNovaSoftW03';
+}
 /*# sourceMappingURL=main.css.map */
