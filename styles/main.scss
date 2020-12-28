@@ -4,7 +4,7 @@
 
 .container{
     width: 100%;
-    max-width: 1312px;
+    max-width: 1342px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -14,7 +14,7 @@
 
 .container-small{
     width: 100%;
-    max-width: 1088px;
+    max-width: 1108px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -303,4 +303,65 @@ body{
     background-size: 120px 201px, 138px 298px, 722px auto, 80% auto, 100% auto, 120% 150%;
     background-position: center right, top right, right center,top right, bottom left;
     
+}
+// ********************************** parents section ***************************************
+
+.parents{
+    margin-bottom: 64px;
+
+    &__inner{
+
+        background-image: url(../images/half-bg.png), url(../images/parents-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 70% 100%, cover;
+        background-position: top right, center;
+        border-radius: 16px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        padding-right: 111px;
+        padding-left: 111px;
+
+        .parents-left{
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            &__title{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 162.5%;
+                letter-spacing: 0.12px;
+                color: #FFFFFF;
+                margin-bottom: 8px;
+            }
+
+            &__text{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 162.5%;
+                letter-spacing: 0.12px;
+                color: #FFFFFF;
+                margin-bottom: 36px;
+            }
+
+            &__btn{
+                border: none;
+                transition: all ease .5s;
+                    
+            }
+        }
+
+        .family-image{
+            display: block;
+            position: relative;
+            top: 15px;
+            width: 339px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
 }
