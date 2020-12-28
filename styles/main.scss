@@ -12,6 +12,16 @@
     box-sizing: border-box;
 }
 
+.container-small{
+    width: 100%;
+    max-width: 1088px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'ProximaNovaSoftW03';
 }
@@ -42,6 +52,7 @@ body{
                     height: 56px;
                     object-fit: contain;
                     margin-right: 23px;
+                    transition: all ease .5s;
 
                     &:hover{
                         opacity: .8;
@@ -60,6 +71,7 @@ body{
                     color:#5D748A;
                     max-width: 130px;
                     text-decoration: none;
+                    transition: all ease .5s;
 
                     &:hover{
                         opacity: .8;
@@ -166,4 +178,7 @@ body{
             }
         }
     }
+    // ********************************* hero *****************************************
+
+    background: url(../images/bg3.png);
 }

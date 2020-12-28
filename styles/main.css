@@ -38,8 +38,23 @@ p {
           box-sizing: border-box;
 }
 
+.container-small {
+  width: 100%;
+  max-width: 1088px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'ProximaNovaSoftW03';
+}
+
+.hero {
+  background: url(../images/bg3.png);
 }
 
 .hero header {
@@ -78,6 +93,8 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 23px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 .hero header .header-inner .header-left__logo:hover {
@@ -96,6 +113,8 @@ body {
   color: #5D748A;
   max-width: 130px;
   text-decoration: none;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 .hero header .header-inner .header-left__logo-title:hover {
