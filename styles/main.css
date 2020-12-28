@@ -84,14 +84,16 @@ body {
   background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
   -webkit-box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
           box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+  color: #FFFFFF;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
-  color: #FFFFFF;
 }
 
 .button--orange:hover {
   background: #fff;
   color: #4A4952;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button--orange:active {
@@ -99,10 +101,11 @@ body {
 }
 
 .hero {
-  background-image: url(../images/bg1.png), url(../images/bg2.png);
+  background-image: url(../images/bg1.png), url(../images/bg2.png), url(../images/bg3.png), -webkit-gradient(linear, left bottom, left top, from(#F4F7FB), color-stop(29.57%, #F9F9F9), color-stop(53.91%, #E6E6E6), color-stop(74.11%, #D6D6D6));
+  background-image: url(../images/bg1.png), url(../images/bg2.png), url(../images/bg3.png), linear-gradient(0deg, #F4F7FB 0%, #F9F9F9 29.57%, #E6E6E6 53.91%, #D6D6D6 74.11%);
   background-repeat: no-repeat;
-  background-size: 100% 1055px, 1128px 801px;
-  background-position: top left, bottom right;
+  background-size: 80% auto, 100% auto, auto auto;
+  background-position: top right, bottom left;
 }
 
 .hero header {
@@ -307,8 +310,12 @@ body {
   padding-top: 84px;
 }
 
-.hero-inner .hero-left__title {
+.hero-inner .hero-left {
   padding-top: 290px;
+  padding-bottom: 453px;
+}
+
+.hero-inner .hero-left__title {
   font-style: normal;
   font-weight: bold;
   font-size: 42px;
@@ -316,5 +323,23 @@ body {
   color: #5D748A;
   width: 533px;
   margin-bottom: 64px;
+}
+
+.hero-inner .hero-left .hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-inner .hero-left .hero-buttons__btn {
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.hero-inner .hero-left .hero-buttons__btn:first-child {
+  margin-right: 16px;
+  padding: 13px 24px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
 }
 /*# sourceMappingURL=main.css.map */

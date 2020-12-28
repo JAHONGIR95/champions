@@ -55,12 +55,13 @@ body{
     &--orange{
         background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
         box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
-        transition: all ease .5s;
         color: #FFFFFF;
+        transition: all ease .5s;
 
         &:hover{
             background: #fff;
             color: #4A4952;
+            box-shadow: none;
         }
 
         &:active {
@@ -228,9 +229,10 @@ body{
         padding-top: 84px;
 
         .hero-left{
+            padding-top: 290px;
+            padding-bottom: 453px;
 
             &__title{
-                padding-top: 290px;
                 font-style: normal;
                 font-weight: bold;
                 font-size: 42px;
@@ -239,14 +241,27 @@ body{
                 width: 533px;
                 margin-bottom: 64px;
             }
+
+            .hero-buttons{
+                display: flex;
+
+                &__btn{
+                    transition: all ease .5s;
+
+                    &:first-child{
+                        margin-right: 16px;
+                        padding: 13px 24px;
+                        transition: all ease .5s;
+
+                    }
+                }
+            }
         }
     }
 
-    background-image: url(../images/bg1.png), url(../images/bg2.png);
+    background-image: url(../images/bg1.png), url(../images/bg2.png), url(../images/bg3.png), linear-gradient(0deg, #F4F7FB 0%, #F9F9F9 29.57%, #E6E6E6 53.91%, #D6D6D6 74.11%);
     background-repeat: no-repeat;
-    background-size: 100% 1055px, 1128px 801px;
-    background-position: top left, bottom right;
+    background-size: 80% auto, 100% auto, auto auto;
+    background-position: top right, bottom left;
     
-    // background: linear-gradient(0deg, rgba(255, 255, 255, 0.71) 0%, #F9F9F9 53%, rgba(255, 255, 255, 0) 100%);
-    // box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.05);
 }
