@@ -26,6 +26,50 @@ body{
     font-family: 'ProximaNovaSoftW03';
 }
 
+// ******************* button **********************************
+
+.button{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #4A4952;
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 13px 47px;
+    border: 1px solid #FEA244;
+    display: inline-block;
+    text-decoration: none;
+    transition: all ease .5s;
+
+    &:hover{
+        background-color: #FD9147;
+        color: #FFFFFF;
+        box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+    }
+
+    &:active{
+        opacity: .6;
+    }
+
+    &--orange{
+        background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+        box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+        transition: all ease .5s;
+        color: #FFFFFF;
+
+        &:hover{
+            background: #fff;
+            color: #4A4952;
+        }
+
+        &:active {
+            opacity: .6;
+        }
+    }
+}
+
+
 // ********************************** header **************************************
 
 .hero{
@@ -179,6 +223,30 @@ body{
         }
     }
     // ********************************* hero *****************************************
+    
+    &-inner{
+        padding-top: 84px;
 
-    background: url(../images/bg3.png);
+        .hero-left{
+
+            &__title{
+                padding-top: 290px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 125.34%;
+                color: #5D748A;
+                width: 533px;
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    background-image: url(../images/bg1.png), url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 1055px, 1128px 801px;
+    background-position: top left, bottom right;
+    
+    // background: linear-gradient(0deg, rgba(255, 255, 255, 0.71) 0%, #F9F9F9 53%, rgba(255, 255, 255, 0) 100%);
+    // box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.05);
 }

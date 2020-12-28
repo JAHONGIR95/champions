@@ -53,8 +53,56 @@ body {
   font-family: 'ProximaNovaSoftW03';
 }
 
+.button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #4A4952;
+  background: #FFFFFF;
+  border-radius: 50px;
+  padding: 13px 47px;
+  border: 1px solid #FEA244;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.button:hover {
+  background-color: #FD9147;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+          box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+}
+
+.button:active {
+  opacity: .6;
+}
+
+.button--orange {
+  background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+  -webkit-box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+          box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  color: #FFFFFF;
+}
+
+.button--orange:hover {
+  background: #fff;
+  color: #4A4952;
+}
+
+.button--orange:active {
+  opacity: .6;
+}
+
 .hero {
-  background: url(../images/bg3.png);
+  background-image: url(../images/bg1.png), url(../images/bg2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 1055px, 1128px 801px;
+  background-position: top left, bottom right;
 }
 
 .hero header {
@@ -253,5 +301,20 @@ body {
   font-size: 17px;
   line-height: 20px;
   color: #5D748A;
+}
+
+.hero-inner {
+  padding-top: 84px;
+}
+
+.hero-inner .hero-left__title {
+  padding-top: 290px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 125.34%;
+  color: #5D748A;
+  width: 533px;
+  margin-bottom: 64px;
 }
 /*# sourceMappingURL=main.css.map */
