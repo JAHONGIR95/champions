@@ -24,7 +24,7 @@
 
 body{
     font-family: 'ProximaNovaSoftW03';
-    background: #E5E5E5;
+    background: #F4F7FB;
 }
 
 // ******************* button **********************************
@@ -1277,7 +1277,9 @@ body{
 // ****************************** footer **************************************************
 
 footer{
-    
+    padding-top: 56px;
+    padding-bottom: 44px;
+
     .footer{
 
         &__top{
@@ -1337,7 +1339,7 @@ footer{
                     line-height: 20px;
                     color: #5D748A;
                     opacity: 0.7;
-                    max-width: 323px;
+                    max-width: 303px;
                 }
 
                 &__title{
@@ -1359,13 +1361,107 @@ footer{
                     color: #5D748A;
                     opacity: 0.7;
                     margin-bottom: 8px;
+                    transition: all ease .5s;
+
+                    &:hover{
+                        color: #FD9147;
+                    }
+
+                    &:active{
+                        color: #FD9147;
+                    }
                 }
             }
 
         }
 
         .footer-bottom{
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
             
+            &__guarantee{
+
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                color: #5D748A;
+                opacity: 0.7;
+                max-width: 242px;
+            }
+
+            &__developer-company{
+                background: #FFFFFF;
+                box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+                border-radius: 16px;
+                padding: 24px 32px;
+                display: flex;
+                align-items: center;
+
+                .company-info{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 147.5%;
+                    color: #5D748A;
+                    margin-right: 16px;
+                }
+
+                .company-image{
+                    width: 105px;
+                    height: 13px;
+                }
+            }
+
+            .social-media{
+
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+
+                &__title{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 20px;
+                    text-align: right;
+                    color: #5D748A;
+                    margin-bottom: 16px;
+                }
+
+                .social{
+
+                    display: flex;
+                    align-items: center;
+        
+                    &__link{
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        margin-left: 12px;
+                        box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+                        transition: all ease .5s;
+        
+                        svg{
+                            fill: #5D748A;
+        
+                            &:hover{
+                                fill: #FD9147;
+                            }
+        
+                            &:active{
+                                opacity: .6;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
