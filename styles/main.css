@@ -1444,4 +1444,8 @@ body {
 .middle-title__inner .all-aphletes:active {
   opacity: .6;
 }
+
+.media__inner {
+  background-image: url(../images/parents-bg.jpg);
+}
 /*# sourceMappingURL=main.css.map */
