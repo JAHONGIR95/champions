@@ -486,6 +486,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 32px;
+  position: relative;
 }
 
 .video__inner {
@@ -496,6 +497,14 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.video__inner .video__outside-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .video__inner .video-block {
@@ -664,6 +673,14 @@ body {
   background-size: contain;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+}
+
+.video-news {
+  background-image: url(../images/water-drop2.svg);
+  background-size: 128px auto;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
 }
 
 .video-news__inner {

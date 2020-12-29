@@ -381,11 +381,21 @@ body{
     display: flex;
     align-items: center;
     margin-bottom: 32px;
+    position: relative;
     
     &__inner{
         display: flex;
         width: 100%;
         align-items: flex-start;
+
+        .video__outside-image{
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            
+        }
         
         .video-block{
             width: 304px;
@@ -542,7 +552,13 @@ body{
 // ************************************** video news *************************************
 
 .video-news{
-    
+
+    background-image: url(../images/water-drop2.svg);
+    background-size: 128px auto;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding-bottom: 120px;
+
     &__inner{
         width: 100%;
         display: flex;
