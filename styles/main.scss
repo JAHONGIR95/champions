@@ -1070,6 +1070,12 @@ body{
                 padding: 11px 12px;
                 background: #FFF4E9;
                 border-radius: 12px;
+                position: relative;
+                margin-bottom: 30px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
 
                 &__image{
                     width: 58px;
@@ -1079,6 +1085,65 @@ body{
                     border-radius: 10px;
                     margin-right: 20px;
                     display: block;
+                }
+
+                .user-data{
+                    width: 183px;
+                    margin-right: 84px;
+                    
+                    &__name{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #16233C;
+                        margin-bottom: 1px;
+                    }
+
+                    &__position{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #467FFF;
+                    }
+                }
+
+                &__star{
+                    width: 34px;
+                    height: 31px;
+                    object-fit: contain;
+                    margin-right: 14px;
+                }
+
+                &__point{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #00B527;
+                    margin-right: 30px;
+                    width: 48px;
+                }
+
+                &__game-controller{
+                    width: 32px;
+                    height: 23.5px;
+                    object-fit: contain;
+                    margin-right: 12px;
+                }
+
+                &__medal{
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                    width: 81px;
+                    height: auto;
+                    object-fit: contain;
+                }
+                
+                &__empty-block{
+                    width: 81px;
                 }
             }
         }

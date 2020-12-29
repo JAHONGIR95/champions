@@ -1287,6 +1287,12 @@ body {
   padding: 11px 12px;
   background: #FFF4E9;
   border-radius: 12px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.user__inner .user-right .user-level:last-child {
+  margin-bottom: 0;
 }
 
 .user__inner .user-right .user-level__image {
@@ -1298,5 +1304,67 @@ body {
   border-radius: 10px;
   margin-right: 20px;
   display: block;
+}
+
+.user__inner .user-right .user-level .user-data {
+  width: 183px;
+  margin-right: 84px;
+}
+
+.user__inner .user-right .user-level .user-data__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #16233C;
+  margin-bottom: 1px;
+}
+
+.user__inner .user-right .user-level .user-data__position {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #467FFF;
+}
+
+.user__inner .user-right .user-level__star {
+  width: 34px;
+  height: 31px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 14px;
+}
+
+.user__inner .user-right .user-level__point {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #00B527;
+  margin-right: 30px;
+  width: 48px;
+}
+
+.user__inner .user-right .user-level__game-controller {
+  width: 32px;
+  height: 23.5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 12px;
+}
+
+.user__inner .user-right .user-level__medal {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 81px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.user__inner .user-right .user-level__empty-block {
+  width: 81px;
 }
 /*# sourceMappingURL=main.css.map */
