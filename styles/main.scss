@@ -816,15 +816,92 @@ body{
             .arena-middle{
 
                 &__row{
+                    display: flex;
 
                     .row-left{
+                        display: flex;
+                        align-items: center;
 
                         &__image{
+                            width: 60px;
+                            height: 60px;
+                            object-fit: contain;
+                            background: #FFFFFF;
+                            box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+                            border-radius: 16px;
+                            padding: 15px;
+                            margin-right: 20px;
+                            box-sizing: border-box;
+                        }
+
+                        &__title{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 125.34%;   
+                            color: #5D748A;
+                            max-width: 112px;
+                            transition: all ease .5s;
+                            text-decoration: none;
+                            margin-right: 32px;
+
+                            &:hover{
+                                color: #558EF7;
+                            }
+
+                            &:active{
+                                opacity: .6;
+                            }
+                        }
+                    }
+
+                    .row-right{
+                        display: flex;
+                        align-items: center;
+
+                        &__image{
+                            padding: 15px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+                            border-radius: 16px;
+                            width: 60px;
+                            height: 60px;
+                            box-sizing: border-box;
+                            margin-right: 20px; 
+
+                        }
+
+                        &__image-gym{
+                            
+                            // padding: 0;
+                            background: none;
+                            width: 100px;
+                            height: 100px;
+                            object-fit: contain;
+                            margin-left: -20px;
+                            margin-top: 20px;
+                            // box-sizing: border-box;
 
                         }
 
                         &__title{
-                            
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 125.34%;   
+                            color: #5D748A;
+                            max-width: 112px;
+                            transition: all ease .5s;
+                            text-decoration: none;
+                            // margin-right: 32px;
+
+                            &:hover{
+                                color: #558EF7;
+                            }
+
+                            &:active{
+                                opacity: .6;
+                            }
                         }
                     }
                 }

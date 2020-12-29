@@ -964,4 +964,107 @@ body {
   line-height: 20px;
   color: #4A4952;
 }
+
+.arena__inner .arena-right .arena-middle__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-left__image {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+          box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+  border-radius: 16px;
+  padding: 15px;
+  margin-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-left__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125.34%;
+  color: #5D748A;
+  max-width: 112px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  text-decoration: none;
+  margin-right: 32px;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-left__title:hover {
+  color: #558EF7;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-left__title:active {
+  opacity: .6;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-right__image {
+  padding: 15px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+          box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+  border-radius: 16px;
+  width: 60px;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-right__image-gym {
+  background: none;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: -20px;
+  margin-top: 20px;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-right__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125.34%;
+  color: #5D748A;
+  max-width: 112px;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  text-decoration: none;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-right__title:hover {
+  color: #558EF7;
+}
+
+.arena__inner .arena-right .arena-middle__row .row-right__title:active {
+  opacity: .6;
+}
 /*# sourceMappingURL=main.css.map */
