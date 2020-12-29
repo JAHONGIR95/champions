@@ -264,6 +264,11 @@ body{
             align-items: center;
             justify-content: center;
             padding-bottom: 164px;
+            position: relative;
+
+            &::before{
+                @include beforeIcon(5px, 750px, 0, 0, 171px, 128px, url(../images/tablet.svg));
+            }
 
             &__first,
             &__last{
@@ -309,6 +314,10 @@ body{
 
 .parents{
     margin-bottom: 64px;
+    position: relative;
+    &::before{
+        @include beforeIcon(-150px, -30px, auto, auto, 178px, 133px, url(../images/hero-waterdrop.svg));
+    }
 
     &__inner{
 
@@ -317,12 +326,12 @@ body{
         background-size: 70% 100%, cover;
         background-position: top right, center;
         border-radius: 16px;
-        // box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         overflow: hidden;
         padding-right: 111px;
         padding-left: 111px;
+
 
         .parents-left{
             padding-top: 40px;
