@@ -894,6 +894,10 @@ body {
   opacity: .6;
 }
 
+.arena {
+  margin-bottom: 120px;
+}
+
 .arena__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -941,6 +945,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 48px;
+  width: 100%;
 }
 
 .arena__inner .arena-right .arena-top__title {
