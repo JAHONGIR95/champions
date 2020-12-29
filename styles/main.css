@@ -408,7 +408,7 @@ body {
   content: "";
   position: absolute;
   top: -150px;
-  right: -30px;
+  right: 0px;
   bottom: auto;
   left: auto;
   margin: auto;
@@ -482,6 +482,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 32px;
 }
 
@@ -489,6 +492,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -502,6 +506,7 @@ body {
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
   cursor: pointer;
+  margin-right: 32px;
 }
 
 .video__inner .video-block:hover {
@@ -516,7 +521,6 @@ body {
   background-size: 304px 216px;
   background-position: center;
   position: relative;
-  margin-right: 32px;
 }
 
 .video__inner .video-block.armlesting {
@@ -526,7 +530,6 @@ body {
   background-size: 304px 216px;
   background-position: center;
   position: relative;
-  margin-right: 32px;
 }
 
 .video__inner .video-block__banner {
@@ -661,5 +664,215 @@ body {
   background-size: contain;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+}
+
+.video-news__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.video-news__inner .video-block {
+  width: 304px;
+  height: 216px;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  cursor: pointer;
+}
+
+.video-news__inner .video-block:hover {
+  background: #558EF7;
+  opacity: 0.7;
+}
+
+.video-news__inner .video-block.competation {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#383C45), to(rgba(56, 60, 69, 0.3))), url(../images/championat.jpg);
+  background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/championat.jpg);
+  background-repeat: no-repeat;
+  background-size: 304px 216px;
+  background-position: center;
+  position: relative;
+}
+
+.video-news__inner .video-block.official {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#383C45), to(rgba(56, 60, 69, 0.3))), url(../images/prezident.jpg);
+  background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/prezident.jpg);
+  background-repeat: no-repeat;
+  background-size: 640px 464px;
+  background-position: center;
+  position: relative;
+  width: 640px;
+  height: 464px;
+}
+
+.video-news__inner .video-block.official .video-block__banner {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.video-news__inner .video-block.official .video-block__banner .banner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.video-news__inner .video-block.official .video-block__banner .banner-top__date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.video-news__inner .video-block.official .video-block__banner .banner-top__sport {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.video-news__inner .video-block.official .video-block__banner .play-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.video-news__inner .video-block.official .video-block__banner .about-sport {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.12px;
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.video-news__inner .video-block.official .video-block__banner .about-sport:hover {
+  opacity: .8;
+}
+
+.video-news__inner .video-block.official .video-block__banner .about-sport:active {
+  opacity: .6;
+}
+
+.video-news__inner .video-block.popular {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#383C45), to(rgba(56, 60, 69, 0.3))), url(../images/popular.jpg);
+  background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/popular.jpg);
+  background-repeat: no-repeat;
+  background-size: 304px 216px;
+  background-position: center;
+  position: relative;
+}
+
+.video-news__inner .video-block__banner {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.video-news__inner .video-block__banner .banner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.video-news__inner .video-block__banner .banner-top__date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+.video-news__inner .video-block__banner .banner-top__sport {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.video-news__inner .video-block__banner .play-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.video-news__inner .video-block__banner .about-sport {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.12px;
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.video-news__inner .video-block__banner .about-sport:hover {
+  opacity: .8;
+}
+
+.video-news__inner .video-block__banner .about-sport:active {
+  opacity: .6;
 }
 /*# sourceMappingURL=main.css.map */

@@ -316,7 +316,7 @@ body{
     margin-bottom: 64px;
     position: relative;
     &::before{
-        @include beforeIcon(-150px, -30px, auto, auto, 178px, 133px, url(../images/hero-waterdrop.svg));
+        @include beforeIcon(-150px, 0px, auto, auto, 178px, 133px, url(../images/hero-waterdrop.svg));
     }
 
     &__inner{
@@ -379,10 +379,12 @@ body{
 .video{
 
     display: flex;
+    align-items: center;
     margin-bottom: 32px;
     
     &__inner{
         display: flex;
+        width: 100%;
         align-items: flex-start;
         
         .video-block{
@@ -392,6 +394,7 @@ body{
             overflow: hidden;
             transition: all ease .5s;
             cursor: pointer;
+            margin-right: 32px;
 
             &:hover{
                 background: #558EF7;
@@ -404,7 +407,7 @@ body{
                 background-size: 304px 216px;
                 background-position: center;
                 position: relative;
-                margin-right: 32px;
+                // margin-right: 32px;
             }
 
             &.armlesting{
@@ -413,7 +416,7 @@ body{
                 background-size: 304px 216px;
                 background-position: center;
                 position: relative;
-                margin-right: 32px;
+                // margin-right: 32px;
             }
             
             &__banner{
@@ -538,3 +541,181 @@ body{
 }
 // ************************************** video news *************************************
 
+.video-news{
+    
+    &__inner{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .video-block{
+            width: 304px;
+            height: 216px;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all ease .5s;
+            cursor: pointer;
+
+            &:hover{
+                background: #558EF7;
+                opacity: 0.7;
+            }
+            
+            &.competation{
+                background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/championat.jpg);
+                background-repeat: no-repeat;
+                background-size: 304px 216px;
+                background-position: center;
+                position: relative;
+                // margin-right: 32px;
+            }
+
+            &.official{
+                background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/prezident.jpg);
+                background-repeat: no-repeat;
+                background-size: 640px 464px;
+                background-position: center;
+                position: relative;
+                // margin-right: 32px;
+                width: 640px;
+                height: 464px;
+
+                .video-block__banner{
+                    position: absolute;
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    
+                    .banner-top{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        // margin-bottom:
+    
+                        &__date{
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 18px;
+                            color: #FFFFFF;
+                        }
+    
+                        &__sport{
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 18px;
+                            text-align: right;
+                            color: #FFFFFF;
+                        }
+                    }
+                    
+                    .play-btn{
+                        display: block;
+                        margin-right: auto;
+                        margin-left: auto;
+                        margin-bottom: 24px;        
+                    }
+    
+                    .about-sport{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 34px;
+                        letter-spacing: 0.12px; 
+                        color: #FFFFFF;
+                        display: inline-block;
+                        text-decoration: none;
+                        transition: all ease .5s;
+    
+                        &:hover{
+                            opacity: .8;
+                        }
+    
+                        &:active{
+                            opacity: .6;
+                        }
+                    }
+                }
+    
+            }
+
+            &.popular{
+                background-image: linear-gradient(0deg, #383C45 0%, rgba(56, 60, 69, 0.3) 100%), url(../images/popular.jpg);
+                background-repeat: no-repeat;
+                background-size: 304px 216px;
+                background-position: center;
+                position: relative;
+                // margin-right: 32px;
+            }
+            
+            &__banner{
+                position: absolute;
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-sizing: border-box;
+                
+                .banner-top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 34px;
+
+                    &__date{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                    }
+
+                    &__sport{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 18px;
+                        text-align: right;
+                        color: #FFFFFF;
+                    }
+                }
+                
+                .play-btn{
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-bottom: 24px;        
+                }
+
+                .about-sport{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.12px;
+                    color: #FFFFFF;
+                    display: inline-block;
+                    text-decoration: none;
+                    transition: all ease .5s;
+
+                    &:hover{
+                        opacity: .8;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+                }
+            }
+
+        }
+    }
+}
