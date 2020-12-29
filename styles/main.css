@@ -1186,6 +1186,10 @@ body {
   opacity: .6;
 }
 
+.user {
+  margin-bottom: 100px;
+}
+
 .user__inner {
   display: -webkit-box;
   display: -ms-flexbox;
