@@ -1153,7 +1153,58 @@ body{
 }
 // ***************************** middle title ************************************
 
+.middle-title{
+    margin-bottom: 24px;
 
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .empty-block{
+            width: 137px;
+            margin-left: 24px;
+        }
+
+        .title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 125.34%;
+            text-align: center;
+            color: #558EF7;
+        }
+
+        .all-aphletes{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            color: #FD9147;
+            display: inline-block;
+            text-decoration: none;
+            position: relative;
+            margin-right: 24px;
+
+            &:hover::before{
+                transform: rotate(90deg);
+            }
+            
+            &::before{
+                @include beforeIcon(0, -24px, 0, auto, 12px, 10px, url(../images/icon/pointer.svg));
+                transition: all ease .5s;
+            }
+            
+            &:hover{
+                opacity: .8;
+            }
+
+            &:active{
+                opacity: .6;
+            }
+        }
+    }
+}
 
 
 
