@@ -996,3 +996,31 @@ body{
     }
 }
 // ******************************** top users **************************************
+
+.user{
+
+    &__inner{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .user-left{
+
+            &__image{
+                width: 435px;
+                height: 417px;
+                object-fit: contain;
+            }
+        }
+
+        .user-right{
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 48px 32px;
+        }
+    }
+}
+
+
+
