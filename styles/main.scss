@@ -767,6 +767,9 @@ body{
         }
 
         .arena-right{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
 
             .arena-top{
 
@@ -814,6 +817,7 @@ body{
             }
 
             .arena-middle{
+                margin-bottom: 48px;
 
                 &__row{
                     display: flex;
@@ -903,6 +907,34 @@ body{
                                 opacity: .6;
                             }
                         }
+                    }
+                }
+            }
+
+            .arena-bottom{
+                display: flex;
+                align-items: center;
+
+                background: #FFFFFF;
+                box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+                border-radius: 16px;
+                padding: 8px 20px;
+
+                &__left{
+                    display: flex;
+                    align-items: center;
+
+                    .number{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 52px;
+                        line-height: 125.34%;
+                        color: #558EF7;
+                        margin-right: 12px;
+                    }
+
+                    .total-counter{
+                        
                     }
                 }
             }
