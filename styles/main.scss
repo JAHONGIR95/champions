@@ -1140,7 +1140,7 @@ body{
                     top: 0;
                     right: 10px;
                     width: 81px;
-                    height: auto;
+                    height: 99px;
                     object-fit: contain;
                 }
                 
@@ -1217,11 +1217,61 @@ body{
 // ****************************** social media *********************************************
 
 .media{
+    margin-bottom: 82px;
     
     &__inner{
 
-        background-image: url(../images/parents-bg.jpg);
-        
+        background-image: url(../images/half-bg.png), url(../images/parents-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 95% auto, 100% auto;
+        background-position: center right, center;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 65px 112px 65px 65px;
+
+        .media-title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 31px;
+            line-height: 162.5%;
+            letter-spacing: 0.12px;
+            color: #FFFFFF;
+            max-width: 536px;
+        }
+
+        .social{
+
+            display: flex;
+            align-items: center;
+
+            &__link{
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                border-radius: 50%;
+                margin-left: 24px;
+                box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+                transition: all ease .5s;
+
+                svg{
+                    fill: #5D748A;
+
+                    &:hover{
+                        fill: #FD9147;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+
     }
 }
 
