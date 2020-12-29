@@ -914,6 +914,7 @@ body{
             .arena-bottom{
                 display: flex;
                 align-items: center;
+                max-width: 528px;
 
                 background: #FFFFFF;
                 box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
@@ -923,6 +924,7 @@ body{
                 &__left{
                     display: flex;
                     align-items: center;
+                    margin-right: 80px;
 
                     .number{
                         font-style: normal;
@@ -934,7 +936,56 @@ body{
                     }
 
                     .total-counter{
+
+                        &__ta{
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 130.3%;
+                            color: #5D748A;
+                            opacity: 0.5;
+                        }
+
+                        &__result{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 125.34%;
+                            color: #5D748A;
+                        }
+                    }
+                }
+
+                &__right{
+
+                    .learn-more{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #FEA244;
+                        text-decoration: none;
+                        display: inline-block;
+                        transition: alle ease .5s;
+                        position: relative;
+                        margin-right: 24px;
+
+                        &:hover::before{
+                            transform: rotate(90deg);
+                        }
                         
+                        &::before{
+                            @include beforeIcon(0, -24px, 0, auto, 12px, 10px, url(../images/icon/pointer.svg));
+                            transition: all ease .5s;
+                        }
+
+                        &:hover{
+                            opacity: .8;
+                        }
+
+                        &:active{
+                            opacity: .6;
+                        }
                     }
                 }
             }

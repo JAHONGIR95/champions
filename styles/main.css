@@ -1092,6 +1092,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 528px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
           box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
@@ -1106,6 +1107,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 80px;
 }
 
 .arena__inner .arena-right .arena-bottom__left .number {
@@ -1115,5 +1117,67 @@ body {
   line-height: 125.34%;
   color: #558EF7;
   margin-right: 12px;
+}
+
+.arena__inner .arena-right .arena-bottom__left .total-counter__ta {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130.3%;
+  color: #5D748A;
+  opacity: 0.5;
+}
+
+.arena__inner .arena-right .arena-bottom__left .total-counter__result {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125.34%;
+  color: #5D748A;
+}
+
+.arena__inner .arena-right .arena-bottom__right .learn-more {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FEA244;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: alle ease .5s;
+  transition: alle ease .5s;
+  position: relative;
+  margin-right: 24px;
+}
+
+.arena__inner .arena-right .arena-bottom__right .learn-more:hover::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.arena__inner .arena-right .arena-bottom__right .learn-more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -24px;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/icon/pointer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.arena__inner .arena-right .arena-bottom__right .learn-more:hover {
+  opacity: .8;
+}
+
+.arena__inner .arena-right .arena-bottom__right .learn-more:active {
+  opacity: .6;
 }
 /*# sourceMappingURL=main.css.map */
