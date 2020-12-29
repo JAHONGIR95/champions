@@ -1018,6 +1018,69 @@ body{
             background: #FFFFFF;
             border-radius: 16px;
             padding: 48px 32px;
+
+            .right-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 28px;
+
+                &__title{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 38px;
+                    color: #558EF7;
+                }
+
+                &__list{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #FD9147;
+                    transition: all ease .5s;
+                    display: inline-block;
+                    text-decoration: none;
+                    position: relative;
+                    margin-right: 24px;
+
+                    &:hover::before{
+                        transform: rotate(90deg);
+                    }
+                    
+                    &::before{
+                        @include beforeIcon(0, -24px, 0, auto, 12px, 10px, url(../images/icon/pointer.svg));
+                        transition: all ease .5s;
+                    }
+
+                    &:hover{
+                        opacity: .8;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+                }
+            }
+
+            .user-level{
+                display: flex;
+                align-items: center;
+                padding: 11px 12px;
+                background: #FFF4E9;
+                border-radius: 12px;
+
+                &__image{
+                    width: 58px;
+                    height: 54px;
+                    border: 1px solid #C9C9C9;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    margin-right: 20px;
+                    display: block;
+                }
+            }
         }
     }
 }

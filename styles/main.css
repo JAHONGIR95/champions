@@ -1210,4 +1210,93 @@ body {
   border-radius: 16px;
   padding: 48px 32px;
 }
+
+.user__inner .user-right .right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.user__inner .user-right .right-header__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #558EF7;
+}
+
+.user__inner .user-right .right-header__list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FD9147;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  margin-right: 24px;
+}
+
+.user__inner .user-right .right-header__list:hover::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.user__inner .user-right .right-header__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -24px;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/icon/pointer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.user__inner .user-right .right-header__list:hover {
+  opacity: .8;
+}
+
+.user__inner .user-right .right-header__list:active {
+  opacity: .6;
+}
+
+.user__inner .user-right .user-level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 12px;
+  background: #FFF4E9;
+  border-radius: 12px;
+}
+
+.user__inner .user-right .user-level__image {
+  width: 58px;
+  height: 54px;
+  border: 1px solid #C9C9C9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
