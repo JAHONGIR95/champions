@@ -893,4 +893,75 @@ body {
 .video-news__inner .video-block__banner .about-sport:active {
   opacity: .6;
 }
+
+.arena__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arena__inner .arena-left {
+  margin-left: 60px;
+}
+
+.arena__inner .arena-left__image-boy {
+  width: 611px;
+  height: 551px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.arena__inner .arena-right .arena-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.arena__inner .arena-right .arena-top__title {
+  display: inline-block;
+  text-decoration: none;
+  max-width: 238px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 125.34%;
+  color: #558EF7;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.arena__inner .arena-right .arena-top__title:hover {
+  opacity: .8;
+}
+
+.arena__inner .arena-right .arena-top__title:active {
+  opacity: .6;
+}
+
+.arena__inner .arena-right .arena-top form select {
+  padding: 15px;
+  padding-right: 5px;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid #FEA244;
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #4A4952;
+}
 /*# sourceMappingURL=main.css.map */

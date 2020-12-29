@@ -748,3 +748,87 @@ body{
 
 
 // ********************************* sport arena **********************************
+
+.arena{
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .arena-left{
+            margin-left: 60px;
+
+            &__image-boy{
+                width: 611px;
+                height: 551px;
+                object-fit: contain;
+            }
+        }
+
+        .arena-right{
+
+            .arena-top{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 48px;
+
+                &__title{
+                    display: inline-block;
+                    text-decoration: none;
+                    max-width: 238px;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 125.34%;
+                    color: #558EF7;
+                    transition: all ease .5s;
+
+                    &:hover{
+                        opacity: .8;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+                }
+
+                form{
+                    
+                    select{
+                        padding: 15px;
+                        padding-right: 5px;
+                        border-radius: 25px;
+                        border: none;
+                        border: 1px solid #FEA244;
+                        outline: none;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #4A4952;
+                    }
+                }
+            }
+
+            .arena-middle{
+
+                &__row{
+
+                    .row-left{
+
+                        &__image{
+
+                        }
+
+                        &__title{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
