@@ -1285,6 +1285,86 @@ footer{
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
+            margin-bottom: 22px;
+
+            .footer-col{
+
+                .footer-logo{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 48px;
+
+                    &__image{
+                        width: 75.5px;
+                        height: 56px;
+                        object-fit: contain;
+                        margin-right: 23.5px;
+                        transition: all ease .5s;
+
+                        &:hover{
+                            opacity: .8;
+                        }
+
+                        &:active{
+                            opacity: .6;
+                        }
+                    }
+
+                    &__brand{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 22px;
+                        line-height: 110.84%;
+                        color: #5D748A;
+                        max-width: 130px;
+                        text-decoration: none;
+                        transition: all ease .5s;
+
+                        &:hover{
+                            opacity: .8;
+                        }
+
+                        &:active{
+                            opacity: .6;
+                        }
+                    }
+                }
+
+                &__text{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #5D748A;
+                    opacity: 0.7;
+                    max-width: 323px;
+                }
+
+                &__title{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #5D748A;
+                    margin-bottom: 20px;
+                }
+
+                &__link{
+                    display: block;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #5D748A;
+                    opacity: 0.7;
+                    margin-bottom: 8px;
+                }
+            }
+
+        }
+
+        .footer-bottom{
             
         }
     }
