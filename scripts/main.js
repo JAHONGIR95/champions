@@ -86,3 +86,22 @@ var swiper = new Swiper('.swiper-container-champions', {
       },
     }
   });
+
+//   ********************* overlay *****************************
+
+var kabinet = document.querySelector('#kabinet');
+var overlay = document.querySelector('#overlay');
+var close = document.querySelector('#close');
+var body = document.querySelector('body');
+
+kabinet.addEventListener('click', function(){
+    overlay.classList.add('opened');
+    body.classList.add('unscrolling');
+});
+
+close.addEventListener('click', function(){
+    overlay.classList.remove('opened');
+    body.classList.remove('unscrolling');
+
+})
+

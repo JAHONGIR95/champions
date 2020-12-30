@@ -54,6 +54,10 @@ body {
   background: #F4F7FB;
 }
 
+body.unscrolling {
+  overflow: hidden;
+}
+
 .button {
   font-style: normal;
   font-weight: 500;
@@ -99,6 +103,287 @@ body {
 
 .button--orange:active {
   opacity: .6;
+}
+
+.overlay {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background: rgba(93, 116, 138, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.overlay.opened {
+  height: 100%;
+}
+
+.overlay .form {
+  background: #FFFFFF;
+  border-radius: 24px;
+  width: 504px;
+  padding: 54px 44px;
+  border: 2px solid #FD9147;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.overlay .form .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.overlay .form .intro__kirish {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: #5D748A;
+}
+
+.overlay .form .intro__close {
+  width: 13px;
+  height: 13px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+.overlay .form .intro__close:hover {
+  opacity: .6;
+}
+
+.overlay .form form .tel,
+.overlay .form form .parol {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5D748A;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.overlay .form form .phone-number {
+  background: #FFFFFF;
+  border: 2px solid #DFE3E8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 26px;
+  margin-bottom: 24px;
+}
+
+.overlay .form form .phone-number__image {
+  width: 16.67px;
+  height: 16.67px;
+  display: block;
+  padding-right: 9px;
+}
+
+.overlay .form form .phone-number__tel-info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5D748A;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.overlay .form form .phone-number input {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5D748A;
+  opacity: 0.5;
+}
+
+.overlay .form form .password {
+  background: #FFFFFF;
+  border: 2px solid #DFE3E8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 26px;
+  margin-bottom: 40px;
+}
+
+.overlay .form form .password__image {
+  width: 17px;
+  height: 17px;
+  display: block;
+  padding-right: 9px;
+}
+
+.overlay .form form .password input {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5D748A;
+  opacity: 0.5;
+}
+
+.overlay .form form button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+  -webkit-box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+          box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 15px 0;
+  margin-bottom: 16px;
+}
+
+.overlay .form .remainder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.overlay .form .remainder__remember {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5D748A;
+  opacity: 0.5;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.overlay .form .remainder__remember:hover {
+  color: #FD9147;
+  opacity: 1;
+}
+
+.overlay .form .remainder__forgot {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: right;
+  color: #FF5F5F;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.overlay .form .remainder__forgot:hover {
+  opacity: .7;
+}
+
+.overlay .form .yoki {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #FD9147;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.overlay .form .yoki::before, .overlay .form .yoki::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #FD9147;
+  width: 166px;
+  height: 2px;
+}
+
+.overlay .form .yoki::after {
+  left: auto;
+  right: 0;
+}
+
+.overlay .form .sing-up-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay .form .sing-up-btn .sign-in {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  background: #FFFFFF;
+  border-radius: 24px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FD9147;
+  padding: 15px 24px;
+  border: 2px solid #FD9147;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.overlay .form .sing-up-btn .sign-in:hover {
+  background: #FD9147;
+  color: #fff;
 }
 
 .hero {
