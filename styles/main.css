@@ -1720,6 +1720,98 @@ body {
           align-items: center;
 }
 
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide .champions-info {
+  position: absolute;
+  bottom: 0;
+  padding: 32px;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide .champions-info__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide .champions-info__position {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-active {
+  width: 400px !important;
+  height: 504px !important;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-active .champions-info {
+  position: absolute;
+  bottom: 0;
+  padding: 32px;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-active .champions-info__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.12px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-active .champions-info__position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-prev,
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-next {
+  max-width: 304px !important;
+  height: 380px !important;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-prev .champions-info,
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-next .champions-info {
+  position: absolute;
+  bottom: 0;
+  padding: 32px;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-prev .champions-info__name,
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-next .champions-info__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-prev .champions-info__position,
+.champions-carousel .swiper-container-champions .swiper-wrapper .swiper-slide-next .champions-info__position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.24px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
 .champions-slide {
   border-radius: 16px;
   overflow: hidden;
@@ -1727,6 +1819,12 @@ body {
   transition: all ease .5s;
   width: 192px;
   height: 256px;
+  position: relative;
+}
+
+.champions-slide .champions-info {
+  position: absolute;
+  bottom: 0;
 }
 
 .champions-slide .champions-image {

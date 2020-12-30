@@ -1455,6 +1455,98 @@ body{
 
         .swiper-wrapper{
             align-items: center;
+
+            .swiper-slide{
+
+                .champions-info{
+                    position: absolute;
+                    bottom: 0;
+                    padding: 32px;
+            
+                    &__name{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 17px;
+                        letter-spacing: 0.24px;
+                        color: #FFFFFF;
+                        margin-bottom: 4px;
+                    }
+                    
+                    &__position{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 16px;
+                        letter-spacing: 0.24px;
+                        color: #FFFFFF;
+                        opacity: 0.6;
+                    }
+                }
+            }
+
+            .swiper-slide-active{
+                width: 400px !important;
+                height: 504px !important;
+
+                .champions-info{
+                    position: absolute;
+                    bottom: 0;
+                    padding: 32px;
+            
+                    &__name{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 34px;
+                        letter-spacing: 0.12px;
+                        color: #FFFFFF;
+                        margin-bottom: 4px;
+                    }
+
+                    &__position{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 22px;
+                        letter-spacing: 0.24px;
+                        color: #FFFFFF;
+                        opacity: 0.6;
+                    }  
+                }
+            }
+
+            .swiper-slide-prev,
+            .swiper-slide-next{
+                max-width: 304px !important;
+                height: 380px !important;
+
+                .champions-info{
+                    position: absolute;
+                    bottom: 0;
+                    padding: 32px;
+
+                    &__name{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 22px;
+                        letter-spacing: 0.24px;
+                        color: #FFFFFF;
+                        margin-bottom: 4px;
+                    }
+
+                    &__position{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 17px;
+                        letter-spacing: 0.24px;
+                        color: #FFFFFF;
+                        opacity: 0.6;
+                    } 
+                }
+            }
         }
     }
 }
@@ -1465,6 +1557,13 @@ body{
     transition: all ease .5s;
     width: 192px;
     height: 256px;
+    position: relative;
+    
+
+    .champions-info{
+        position: absolute;
+        bottom: 0;        
+    }
 
     // &.swiper-slide-active{
     //     width: 416px !important;

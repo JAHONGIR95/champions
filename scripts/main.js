@@ -61,7 +61,7 @@ var swiper = new Swiper('.swiper-container-advise', {
 //   ********************************************************
 
 var swiper = new Swiper('.swiper-container-champions', {
-    // slidesPerView: 5,
+    slidesPerView: 5,
     // spaceBetween: 10,
     centeredSlides: true,
     loop: true,
@@ -82,7 +82,7 @@ var swiper = new Swiper('.swiper-container-champions', {
       },
       1024: {
         slidesPerView: 4,
-        spaceBetween: 32,
+        spaceBetween: 25,
       },
     }
   });
