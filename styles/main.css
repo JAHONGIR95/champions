@@ -1009,8 +1009,14 @@ body {
   display: inline-block;
 }
 
+.advise {
+  position: relative;
+  height: 100%;
+}
+
 .advise__banner {
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .advise__banner .advise-title {
@@ -1035,12 +1041,14 @@ body {
 
 .advise .swiper-container-advise {
   width: 100%;
-  height: 170px;
+  height: 250px;
   display: block;
+  overflow: hidden;
 }
 
-.advise .swiper-container-advise .swiper-wrapper .advise-block {
+.advise-block {
   max-width: 416px;
+  height: 140px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
           box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
@@ -1048,7 +1056,7 @@ body {
   padding: 24px;
 }
 
-.advise .swiper-container-advise .swiper-wrapper .advise-block__title {
+.advise-block__title {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1058,7 +1066,7 @@ body {
   margin-bottom: 20px;
 }
 
-.advise .swiper-container-advise .swiper-wrapper .advise-block__text {
+.advise-block__text {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

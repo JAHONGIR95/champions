@@ -32,23 +32,25 @@ var mySwiper = new Swiper('.swiper-container', {
 //   **************************************************
 
 var swiper = new Swiper('.swiper-container-advise', {
-    slidesPerView: 1,
+    // slidesPerView: 1,
     // spaceBetween: 10,
     direction: 'horizontal',
     loop: true,
+    centeredSlides: true,
     // init: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
+
     breakpoints: {
       640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 10,
       },
       768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
       1310: {
         slidesPerView: 4,
