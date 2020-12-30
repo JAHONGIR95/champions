@@ -229,6 +229,18 @@ body{
     
     &-inner{
         padding-top: 84px;
+        
+        &__black-box{
+            position: absolute;
+            top: 150px;
+            left: -10px;
+        }
+
+        &__rectangle{
+            position: absolute;
+            top: 290px;
+            right: 0;
+        }
 
         &__wrapper{
             display: flex;
