@@ -93,6 +93,8 @@ var kabinet = document.querySelector('#kabinet');
 var overlay = document.querySelector('#overlay');
 var close = document.querySelector('#close');
 var body = document.querySelector('body');
+var hamburger = document.querySelector('#hamburger');
+var headerRes = document.querySelector('#header-res');
 
 kabinet.addEventListener('click', function(){
     overlay.classList.add('opened');
@@ -103,5 +105,10 @@ close.addEventListener('click', function(){
     overlay.classList.remove('opened');
     body.classList.remove('unscrolling');
 
+})
+
+hamburger.addEventListener('click', function(){
+    hamburger.classList.toggle('clicked');
+    headerRes.classList.toggle('down');
 })
 
