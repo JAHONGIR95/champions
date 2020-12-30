@@ -3,7 +3,7 @@ var mySwiper = new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
     // slidesPerView: 3,
-    spaceBetween: 25,
+    spaceBetween: 27,
     centeredSlides: true,
 
     
@@ -28,3 +28,31 @@ var mySwiper = new Swiper('.swiper-container', {
         },
       }
   })
+
+//   **************************************************
+
+var swiper = new Swiper('.swiper-container-advise', {
+    slidesPerView: 1,
+    // spaceBetween: 10,
+    direction: 'horizontal',
+    loop: true,
+    // init: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1310: {
+        slidesPerView: 4,
+        spaceBetween: 32,
+      },
+    }
+  });

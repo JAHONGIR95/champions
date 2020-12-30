@@ -1033,6 +1033,53 @@ body {
   max-width: 416px;
 }
 
+.advise .swiper-container-advise {
+  width: 100%;
+  height: 170px;
+  display: block;
+}
+
+.advise .swiper-container-advise .swiper-wrapper .advise-block {
+  max-width: 416px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+          box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.advise .swiper-container-advise .swiper-wrapper .advise-block__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.24px;
+  color: #5D748A;
+  margin-bottom: 20px;
+}
+
+.advise .swiper-container-advise .swiper-wrapper .advise-block__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130.3%;
+  color: #5D748A;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet {
+  background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+  opacity: 0.4;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 6px;
+  width: 116px;
+  opacity: 1;
+}
+
 .arena {
   margin-bottom: 120px;
 }
