@@ -738,7 +738,20 @@ body{
 }
 // ***************************** o'yinlar carausel **************************
 
+.games{
 
+    &__inner{
+
+        .games-title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 125.34%;
+            text-align: center;
+            color: #558EF7;
+        }
+    }
+}
 
 .swiper-container {
     width: 100%;
