@@ -11,6 +11,42 @@
 </head>
 
 <body>
+    <div class="overlay" id="overlay">
+        <div class="form">
+            <div class="intro">
+                <h2 class="intro__kirish">
+
+                </h2>
+                <img src="" alt="" class="intro__close">
+            </div>
+            <form action="#">
+                <label for="phone_number"></label>
+                <div class="phone-number">
+                    <img src="" alt="" class="phone-number__image">
+                    <input type="tel" id="phone_number" name="phone_number">
+                </div>
+                
+                <label for="password"></label>
+                <div class="password">
+                    <img src="" alt="" class="password">
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="submit"></button>
+            </form>
+
+            <div class="remainder">
+                <a href="#" class="remember">
+
+                </a>
+                <a href="#" class="forgot">
+
+                </a>
+            </div>
+
+            <p class="yoki"></p>
+            <a href="#" class="sign-in"></a>
+        </div>
+    </div>
     <div class="hero">
         <header>
             <div class="header-inner container">
@@ -33,7 +69,7 @@
                     <a href="#" class="header-right__lang">
                         O‘zb
                     </a>
-                    <a href="#" class="header-right__kabinet">
+                    <a href="#" class="header-right__kabinet" id="kabinet">
                         <img src="images/icon/kabinet.svg" alt="" class="kabinet-image">
                         <p class="kabinet-title">
                             Kabinet
