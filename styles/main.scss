@@ -740,6 +740,57 @@ body{
 
 
 
+.swiper-container {
+    width: 100%;
+    height: 340px;
+    text-align: center;
+    .swiper-wrapper{
+        align-items: center;
+    }
+}
+
+.swiper-pagination-bullet{
+    background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
+    opacity: 0.4;
+    transition: all ease .5s;
+
+    &-active{
+        border-radius: 6px;
+        width: 116px;
+        opacity: 1;
+    }
+}
+
+.person-slide{
+    border-radius: 40px;
+    overflow: hidden;
+    transition: all ease .5s;
+    width: 304px;
+    height: 200px;
+
+    &.swiper-slide-active{
+        width: 416px !important;
+        height: 260px !important;
+    }
+
+    &.swiper-slide-prev,
+    &.swiper-slide-next{
+        width: 304px !important;
+        height: 200px !important;
+    }
+
+    .person-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .person-info{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 
 
 // ****************************** sport masalalari ******************************
