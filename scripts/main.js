@@ -33,7 +33,7 @@ var mySwiper = new Swiper('.swiper-container', {
 
 var swiper = new Swiper('.swiper-container-advise', {
     // slidesPerView: 1,
-    // spaceBetween: 10,
+    spaceBetween: 10,
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,

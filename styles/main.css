@@ -1552,6 +1552,7 @@ body.unscrolling {
   .video-news {
     background-image: none;
     margin-bottom: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -1853,6 +1854,13 @@ body.unscrolling {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .games {
+    background-image: none;
+    margin-bottom: 20px;
+  }
+}
+
 .games__inner {
   position: relative;
 }
@@ -1865,6 +1873,12 @@ body.unscrolling {
   height: 203px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media only screen and (max-width: 576px) {
+  .games__inner .black-box {
+    display: none;
+  }
 }
 
 .games__inner .games-title {
@@ -1882,10 +1896,27 @@ body.unscrolling {
   text-align: center;
 }
 
+@media only screen and (max-width: 576px) {
+  .swiper-container {
+    width: 315px;
+    height: 250px;
+  }
+}
+
 .swiper-container .swiper-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .swiper-container .swiper-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -1917,6 +1948,13 @@ body.unscrolling {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .person-slide {
+    width: 315px;
+    height: 191px;
+  }
+}
+
 .person-slide.swiper-slide-active {
   width: 416px !important;
   height: 260px !important;
@@ -1925,6 +1963,13 @@ body.unscrolling {
 @media only screen and (max-width: 992px) {
   .person-slide.swiper-slide-active {
     width: 306px !important;
+    height: 191px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .person-slide.swiper-slide-active {
+    width: 315px !important;
     height: 191px !important;
   }
 }
@@ -1941,6 +1986,13 @@ body.unscrolling {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .person-slide.swiper-slide-prev, .person-slide.swiper-slide-next {
+    width: 135px !important;
+    height: 191px !important;
+  }
+}
+
 .person-slide .person-image {
   width: 100%;
   height: 100%;
@@ -1951,6 +2003,12 @@ body.unscrolling {
 .person-slide .person-info {
   position: absolute;
   bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .images {
+    display: none;
+  }
 }
 
 .images__inner {

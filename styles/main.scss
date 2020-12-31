@@ -1265,6 +1265,7 @@ body{
     @media only screen and (max-width: 576px){
         background-image: none;
         margin-bottom: 30px;
+        padding-bottom: 0;
     }
 
     &__inner{
@@ -1500,8 +1501,14 @@ body{
     background-repeat: no-repeat;
     background-size: 100px 206px;
     background-position: top left;
+
     @media only screen and (max-width: 992px){
         background-position: -30px -20px;               
+    }
+
+    @media only screen and (max-width: 576px){
+        background-image: none;
+        margin-bottom: 20px;
     }
 
     &__inner{
@@ -1514,6 +1521,10 @@ body{
             width: 270px;
             height: 203px;
             object-fit: contain;
+
+            @media only screen and (max-width: 576px){
+                display: none;
+            }
         }
 
         .games-title{
@@ -1531,12 +1542,25 @@ body{
     width: 100%;
     height: 340px;
     text-align: center;
+
+    @media only screen and (max-width: 576px){
+        width: 315px;
+        height: 250px;
+    }
     .swiper-wrapper{
         align-items: center;
+        
+        @media only screen and (max-width: 576px){
+                justify-content: center;
+                margin-right: auto;
+                margin-left: auto;
+
+        }
     }
 }
 
 .swiper-pagination-bullet{
+
     background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
     opacity: 0.4;
     transition: all ease .5s;
@@ -1560,6 +1584,11 @@ body{
         height: 145px;
     }
 
+    @media only screen and (max-width: 576px){
+        width: 315px;
+        height: 191px;
+    }
+
     &.swiper-slide-active{
         width: 416px !important;
         height: 260px !important;
@@ -1567,6 +1596,11 @@ body{
         @media only screen and (max-width: 992px){
           width: 306px !important;   
           height: 191px !important;        
+        }
+
+        @media only screen and (max-width: 576px){
+            width: 315px!important;
+            height: 191px !important;
         }
     }
 
@@ -1578,6 +1612,11 @@ body{
         @media only screen and (max-width: 992px){
          width: 221px !important;           
          height: 145px !important;
+        }
+
+        @media only screen and (max-width: 576px){
+            width: 135px !important;
+            height: 191px !important;
         }
     }
 
@@ -1595,6 +1634,10 @@ body{
 // ******************************** two image section ***********************************
 
 .images{
+
+    @media only screen and (max-width: 576px){
+        display: none;
+    }
 
     &__inner{
 
