@@ -1624,6 +1624,7 @@ body.unscrolling {
 @media only screen and (max-width: 576px) {
   .video-news__inner .video-block.competation {
     background-size: 315px 285px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1648,7 +1649,7 @@ body.unscrolling {
 
 @media only screen and (max-width: 576px) {
   .video-news__inner .video-block.official {
-    background-size: 315px 285px;
+    display: none;
   }
 }
 

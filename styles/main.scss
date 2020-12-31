@@ -1311,6 +1311,7 @@ body{
 
                 @media only screen and (max-width: 576px){
                     background-size: 315px 285px;
+                    margin-bottom: 30px;
                 }
                 // margin-right: 32px;
             }
@@ -1332,7 +1333,7 @@ body{
                 }
 
                 @media only screen and (max-width: 576px){
-                    background-size: 315px 285px;
+                    display: none;
                 }
 
                 .video-block__banner{
