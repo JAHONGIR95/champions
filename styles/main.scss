@@ -50,11 +50,17 @@ body{
     color: #4A4952;
     background: #FFFFFF;
     border-radius: 50px;
-    padding: 13px 47px;
+    padding: 13px 24px;
     border: 1px solid #FEA244;
     display: inline-block;
     text-decoration: none;
     transition: all ease .5s;
+
+    @media only screen and (max-width: 576px){
+        width: 315px;
+        text-align: center;
+        padding: 13px 0;
+    }
 
     &:hover{
         background-color: #FD9147;
@@ -71,6 +77,8 @@ body{
         box-shadow: 0px 4px 22px rgba(253, 145, 71, 0.4);
         color: #FFFFFF;
         transition: all ease .5s;
+        margin-left: 0;
+
 
         &:hover{
             background: #fff;
@@ -453,6 +461,10 @@ body{
                         display: block;
                     }
 
+                    @media only screen and (max-width: 576px){
+                        margin-right: 0;
+                    }
+
                     
                     .links{
                         display: block;
@@ -491,6 +503,178 @@ body{
                         }
                     }
                 }
+
+                &__lang{
+                    display: inline-block;
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #5D748A;
+                    margin-right: 24px;
+                    position: relative;
+                    transition: all ease .5s;
+
+                    @media only screen and (max-width: 576px){
+                        display: none;
+                    }
+
+                    &:hover{
+                        color: #FEA244;
+                    }
+
+                    &:active{
+                        opacity: .6;
+                    }
+
+                    &::before{
+                        @include beforeIcon(0, auto, 0, -24px, 16.5px, 16px, url(../images/icon/lang.svg));
+                        opacity: .6;
+    
+                    }
+                }
+
+                &__kabinet{
+                    align-items: center;
+                    background: #FFFFFF;
+                    border-radius: 24px;
+                    padding: 8px 16.5px;
+                    border: 1px solid #FEA244;
+                    display: flex;
+                    text-decoration: none;
+                    transition: all ease .5s;
+
+                    @media only screen and (max-width: 576px){
+                        display: none;
+                    }
+
+                    &:hover{
+                        opacity: .6;
+                    }
+
+                    .kabinet-image{
+                        margin-right: 8px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .kabinet-title{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #5D748A;
+                    }
+                }
+            }
+        }
+    }
+    // *********************************** responsive header ********************************
+
+    .header-res{
+        display: none;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+        backdrop-filter: blur(4px);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        opacity: .2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        transition: all ease 1s;
+
+        @media only screen and (max-width: 992px){
+            &.down{
+                top: 84px;
+                opacity: 1;
+            }
+        }
+
+        @media only screen and (max-width: 576px){
+            top: 84px;
+            transform: translateY(-500px);
+
+            &.down{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media only screen and (max-width: 576px){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        .header-middle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            // margin-left: 33px;
+
+            @media only screen and (max-width: 576px){
+                flex-direction: column;
+
+                &::before{
+                    display: none;
+                }
+
+                margin-bottom: 120px;
+                padding-top: 50px;
+            }
+
+            &::before{
+                @include beforeIcon(0, auto, 0, -33px, 22px, 19px, url(../images/icon/home.svg));
+            }
+
+            &__link{
+                display: inline-block;
+                text-decoration: none;
+                padding: 18px 16px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 20px;
+                color: #5D748A;
+                transition: all ease .5s;
+
+                @media only screen and (max-width: 576px){
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #5D748A;
+                    padding: 7px;
+                }
+
+                &:hover{
+                    color: #FEA244;
+                }
+
+                &:active{
+                    opacity: .6;
+                }
+            }
+        }
+
+        .header-func{
+            @media only screen and (max-width:992px){
+                display: none;
+            }
+
+            @media only screen and (max-width: 576px){
+                display: flex;
+                align-items: center;
+                margin-bottom: 35px;
+
 
                 &__lang{
                     display: inline-block;
@@ -550,63 +734,6 @@ body{
             }
         }
     }
-    // *********************************** responsive header ********************************
-
-    .header-res{
-        display: none;
-        background: rgba(255, 255, 255, 0.8);
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
-        backdrop-filter: blur(4px);
-        width: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 1;
-        opacity: .2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
-        transition: all ease 1s;
-
-        @media only screen and (max-width: 992px){
-            &.down{
-                top: 84px;
-                opacity: 1;
-            }
-        }
-
-        .header-middle{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            // margin-left: 33px;
-
-            &::before{
-                @include beforeIcon(0, auto, 0, -33px, 22px, 19px, url(../images/icon/home.svg));
-            }
-
-            &__link{
-                display: inline-block;
-                text-decoration: none;
-                padding: 18px 16px;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 17px;
-                line-height: 20px;
-                color: #5D748A;
-                transition: all ease .5s;
-
-                &:hover{
-                    color: #FEA244;
-                }
-
-                &:active{
-                    opacity: .6;
-                }
-            }
-        }
-    }
 
     // ********************************* hero *****************************************
     
@@ -617,16 +744,28 @@ body{
             position: absolute;
             top: 150px;
             left: -70px;
+
+            @media only screen and (max-width: 576px){
+                display: none;
+            }
         }
 
         &__rectangle{
             position: absolute;
             top: 290px;
             right: 0;
+
+            @media only screen and (max-width: 576px){
+                display: none;
+            }
         }
 
         &__wrapper{
             display: flex;
+
+            @media only screen and (max-width: 576px){
+                flex-direction: column-reverse;
+            }
 
             .hero-left{
                 padding-top: 290px;
@@ -635,6 +774,11 @@ body{
                 @media only screen and (max-width: 992px){
                     padding-top: 196px;
                     padding-bottom: 200px;
+                }
+
+                @media only screen and (max-width: 576px){
+                    padding-top: 0;
+                    padding-bottom: 20px;
                 }
     
                 &__title{
@@ -652,17 +796,38 @@ body{
                         max-width: 364px;
                         margin-bottom: 54px;
                     }
+
+                    @media only screen and (max-width: 576px){
+                        max-width: 315px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 40px;
+
+                    }
                 }
     
                 .hero-buttons{
                     display: flex;
+                    
+
+                    @media only screen and (max-width: 576px){
+                        flex-direction: column;  
+                        align-items: center;
+                    }
     
                     &__btn{
-    
+                        
                         &:first-child{
                             margin-right: 16px;
                             padding: 13px 24px;
                             transition: all ease .5s;
+
+                            @media only screen and (max-width: 576px){
+                                padding: 13px 0;
+                                margin-bottom: 20px;
+                                margin-right: 0;
+                                
+                            }
     
                         }
                     }
@@ -682,6 +847,16 @@ body{
                     right: -50px;
                     top: 100px;
                 }
+
+                @media only screen and (max-width: 576px){
+                    width: 318px;
+                    height: 314px;
+                    right: 0;
+                    top: 0;
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
             }
         }
         // *************************** carausel ******************************
@@ -693,12 +868,21 @@ body{
             padding-bottom: 164px;
             position: relative;
 
+            @media only screen and (max-width: 576px){
+                padding-bottom: 30px;
+            }
+
             &::before{
                 @include beforeIcon(5px, 750px, 0, 0, 171px, 128px, url(../images/tablet.svg));
 
                 @media only screen and (max-width: 992px){
                     right: 500px;
                 }
+
+                @media only screen and (max-width: 576px){
+                    display: none;
+                }
+
             }
 
 
@@ -732,6 +916,10 @@ body{
                 background: linear-gradient(166.82deg, #FEA244 -0.4%, #FD9147 61.84%);
                 border-radius: 6px;
                 margin: 0 8px;
+
+                @media only screen and (max-width: 576px){
+                    width: 42px;
+                }
             }
         }
     }
@@ -740,6 +928,12 @@ body{
     background-repeat: no-repeat;
     background-size: 100px 206px, 138px 298px, 80% auto, 100% auto, 120% 150%;
     background-position: bottom left, top right, top right, bottom left;
+
+    @media only screen and (max-width: 576px){
+        background-image: none;
+        background-image: url(../images/hero-hlfcircle.svg), url(../images/ellipse-hero.svg), url(../images/bg1.png), url(../images/bg2.png), url(../images/bg3.png), linear-gradient(0deg, #F4F7FB 0%, #F9F9F9 29.57%, #E6E6E6 53.91%, #D6D6D6 74.11%);
+        
+    }
     
 }
 // ********************************** parents section ***************************************
@@ -747,8 +941,17 @@ body{
 .parents{
     margin-bottom: 64px;
     position: relative;
+
+    @media only screen and (max-width: 576px){
+        margin-bottom: 30px;
+    }
+
     &::before{
         @include beforeIcon(-150px, 0px, auto, auto, 178px, 133px, url(../images/hero-waterdrop.svg));
+
+        @media only screen and (max-width: 576px){
+            display: none;
+        }  
     }
 
     &__inner{
@@ -767,6 +970,12 @@ body{
         @media only screen and (max-width: 992px){
             padding-left: 84px;
             padding-right: 60px;
+        }
+        
+        @media only screen and (max-width: 576px){
+            background-image: none;
+            background-image: url(../images/parents-bg.jpg);
+            background-size: cover;
         }
 
 
@@ -812,6 +1021,10 @@ body{
             width: 389px;
             height: auto;
             object-fit: cover;
+
+            @media only screen and (max-width: 576px){
+                display: none;
+            }
         }
     }
 }
@@ -829,12 +1042,20 @@ body{
         width: 100%;
         align-items: flex-start;
 
+        @media only screen and (max-width: 576px){
+            flex-direction: column-reverse;
+        }
+
         .video__outside-image{
             position: absolute;
             right: 0;
             top: 0;
             bottom: 0;
             margin: auto;
+
+            @media only screen and (max-width: 576px){
+                display: none;
+            }
             
         }
         
@@ -854,6 +1075,15 @@ body{
                 height: 200px;
             }
 
+            @media only screen and (max-width: 576px){
+                width: 315px;
+                height: 284.68px;
+                margin-right: 0;
+                margin-right: auto;
+                margin-left: auto   ;
+                
+            }
+
             &:hover{
                 background: #558EF7;
                 opacity: 0.7;
@@ -865,6 +1095,11 @@ body{
                 background-size: 304px 216px;
                 background-position: center;
                 position: relative;
+
+                @media only screen and (max-width: 576px){
+                background-size: 314px 285px;
+
+                }
                 // margin-right: 32px;
             }
 
@@ -874,6 +1109,12 @@ body{
                 background-size: 304px 216px;
                 background-position: center;
                 position: relative;
+
+                @media only screen and (max-width: 576px){
+                    background-size: 314px 285px;
+                    margin-bottom: 30px;
+    
+                    }
                 // margin-right: 32px;
             }
             
@@ -888,6 +1129,10 @@ body{
                     align-items: center;
                     justify-content: space-between;
                     margin-bottom: 34px;
+
+                    @media only screen and (max-width: 576px){
+                        margin-bottom: 60px;
+                    }
 
                     &__date{
                         font-style: normal;
@@ -911,7 +1156,11 @@ body{
                     display: block;
                     margin-right: auto;
                     margin-left: auto;
-                    margin-bottom: 24px;        
+                    margin-bottom: 24px;  
+                    
+                    @media only screen and (max-width: 576px){
+                        margin-bottom: 50px;
+                    }
                 }
 
                 .about-sport{
@@ -937,6 +1186,10 @@ body{
 
         }
         .video-post{
+
+            @media only screen and (max-width: 576px){
+                margin-bottom: 30px;
+            }
 
             &__title{
 
@@ -1009,11 +1262,22 @@ body{
     padding-bottom: 120px;
     margin-bottom: 127px;
 
+    @media only screen and (max-width: 576px){
+        background-image: none;
+        margin-bottom: 30px;
+    }
+
     &__inner{
         width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+
+        @media only screen and (max-width: 576px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         .video-block{
             width: 304px;
@@ -1028,6 +1292,11 @@ body{
                 height: 200px;
             }
 
+            @media only screen and (max-width: 576px){
+                width: 315px;
+                height: 285px;
+            }
+
             &:hover{
                 background: #558EF7;
                 opacity: 0.7;
@@ -1039,6 +1308,10 @@ body{
                 background-size: 304px 216px;
                 background-position: center;
                 position: relative;
+
+                @media only screen and (max-width: 576px){
+                    background-size: 315px 285px;
+                }
                 // margin-right: 32px;
             }
 
@@ -1056,6 +1329,10 @@ body{
                     background-size: 473px 400px;
                     width: 473px;
                     height: 400px;
+                }
+
+                @media only screen and (max-width: 576px){
+                    background-size: 315px 285px;
                 }
 
                 .video-block__banner{
@@ -1142,6 +1419,10 @@ body{
                 background-size: 304px 216px;
                 background-position: center;
                 position: relative;
+
+                @media only screen and (max-width: 576px){
+                    background-size: 315px 285px;
+                }
                 // margin-right: 32px;
             }
             
