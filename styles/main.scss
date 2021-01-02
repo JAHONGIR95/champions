@@ -1829,6 +1829,10 @@ body{
     }
     margin-bottom: 120px;
 
+    @media only screen and (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+
     &__inner{
         display: flex;
         align-items: center;
@@ -1935,6 +1939,10 @@ body{
             .arena-middle{
                 margin-bottom: 48px;
 
+                @media only screen and (max-width: 576px){
+                    margin-bottom: 10px;
+                }
+
                 &__row{
                     display: flex;
 
@@ -1958,7 +1966,7 @@ body{
 
                         @media only screen and (max-width: 576px){
                             &:first-child{
-                                margin-bottom: 30px;
+                                margin-bottom: 25px;
                             }
                         }
                         
@@ -1985,6 +1993,10 @@ body{
                             transition: all ease .5s;
                             text-decoration: none;
                             margin-right: 32px;
+
+                            @media only screen and (max-width: 576px) {
+                                max-width: 200px;
+                            }
 
                             &:hover{
                                 color: #558EF7;
@@ -2040,6 +2052,10 @@ body{
                             text-decoration: none;
                             // margin-right: 32px;
 
+                            @media only screen and (max-width: 576px) {
+                                max-width: 200px;
+                            }
+
                             &:hover{
                                 color: #558EF7;
                             }
@@ -2057,6 +2073,11 @@ body{
                 align-items: center;
                 max-width: 528px;
 
+                @media only screen and (max-width: 576px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
                 background: #FFFFFF;
                 box-shadow: 0px 10px 20px rgba(106, 123, 145, 0.05);
                 border-radius: 16px;
@@ -2066,6 +2087,10 @@ body{
                     display: flex;
                     align-items: center;
                     margin-right: 30px;
+
+                    @media only screen and (max-width: 576px) {
+                        margin-bottom: 20px;
+                    }
 
                     .number{
                         font-style: normal;
@@ -2137,6 +2162,7 @@ body{
         }
     }
 }
+
 // ******************************** top users **************************************
 
 .user{
@@ -2149,7 +2175,16 @@ body{
         align-items: center;
         justify-content: space-between;
 
+        @media only screen and (max-width: 576px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .user-left{
+
+            @media only screen and (max-width: 576px){
+                margin-bottom: 30px;
+            }
 
             &__image{
                 width: 435px;
@@ -2159,6 +2194,11 @@ body{
                 @media only screen and (max-width: 992px){
                     width: 389px;
                     height: 372px;
+                }
+
+                @media only screen and (max-width: 576px){
+                    width: 306px;
+                    height: 293px;
                 }
             }
         }
