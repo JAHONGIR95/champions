@@ -3477,6 +3477,8 @@ footer .footer .footer-bottom__developer-company {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 13px 18px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 
