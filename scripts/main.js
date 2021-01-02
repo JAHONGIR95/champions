@@ -16,7 +16,7 @@ var mySwiper = new Swiper('.swiper-container', {
     breakpoints: {
         640: {
           slidesPerView: 1,
-        //   spaceBetween: 20,
+          spaceBetween: 0,
         },
         768: {
           slidesPerView: 2,
@@ -61,7 +61,7 @@ var swiper = new Swiper('.swiper-container-advise', {
 //   ********************************************************
 
 var swiper = new Swiper('.swiper-container-champions', {
-    slidesPerView: 5,
+    // slidesPerView: 5,
     // spaceBetween: 10,
     centeredSlides: true,
     loop: true,

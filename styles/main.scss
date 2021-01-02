@@ -2208,6 +2208,10 @@ body{
             border-radius: 16px;
             padding: 48px 32px;
 
+            @media only screen and (max-width: 576px){
+                display: none;
+            }
+
             .right-header{
                 display: flex;
                 align-items: center;
@@ -2464,6 +2468,9 @@ body{
 
     @media only screen and (max-width: 576px){
         margin-bottom: 30px;
+        width: 315px;
+        margin-right: auto;
+        margin-left: auto;;
     }
 
     .swiper-container-champions{
@@ -2476,7 +2483,6 @@ body{
 
         .swiper-wrapper{
             align-items: center;
-
 
             .swiper-slide{
 
@@ -2511,6 +2517,11 @@ body{
                 width: 400px !important;
                 height: 504px !important;
 
+                @media only screen and (max-width: 576px){
+                    width: 100% !important;
+                    height: 385px !important;
+                }
+
                 .champions-info{
                     position: absolute;
                     bottom: 0;
@@ -2542,6 +2553,11 @@ body{
             .swiper-slide-next{
                 max-width: 304px !important;
                 height: 380px !important;
+
+                @media only screen and (max-width: 576px){
+                    width: 100% !important;
+                    height: 385px !important;
+                }
 
                 .champions-info{
                     position: absolute;
