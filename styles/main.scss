@@ -2837,6 +2837,9 @@ footer{
 
                 @media only screen and (max-width: 576px){
                     margin-bottom: 34px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 13px 18px;
                 }
 
                 .company-info{
@@ -2846,6 +2849,11 @@ footer{
                     line-height: 147.5%;
                     color: #5D748A;
                     margin-right: 16px;
+
+                    @media only screen and (max-width: 576px){
+                        margin-bottom: 10px;
+                        width: 315px;
+                    }
                 }
 
                 .company-image{

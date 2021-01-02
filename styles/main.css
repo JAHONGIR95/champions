@@ -3469,6 +3469,14 @@ footer .footer .footer-bottom__developer-company {
 @media only screen and (max-width: 576px) {
   footer .footer .footer-bottom__developer-company {
     margin-bottom: 34px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 13px 18px;
   }
 }
 
@@ -3479,6 +3487,13 @@ footer .footer .footer-bottom__developer-company .company-info {
   line-height: 147.5%;
   color: #5D748A;
   margin-right: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  footer .footer .footer-bottom__developer-company .company-info {
+    margin-bottom: 10px;
+    width: 315px;
+  }
 }
 
 footer .footer .footer-bottom__developer-company .company-image {
